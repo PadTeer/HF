@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medication Reconciliation</title>
+    <link rel="stylesheet" href="css/HFstyle.css">
+</head>
+<body>
+    <div class="head">
+        <H1>Medication & Prescription</H1>
+
+    </div>
+    <div class="medication">
+        <table>
+            <tr>
+                <th>กลุ่มยา</th>
+                <th>ชื่อยา</th>
+                <th>ขนาดยา</th>
+                <th>เม็ด</th>
+                <th> </th>
+                <th>ครั้ง</th>
+                <th> </th>
+                <th>ปรับยา</th>
+                <th> </th>
+                <th>ชื่อยา</th>
+                <th>ขนาดยา</th>
+                <th>เม็ด</th>
+                <th> </th>
+                <th>ครั้ง</th>
+                <th> </th>
+                <th>ยาที่ใช้</th>
+                <th>ยาเหลือ</th>
+                <th>ยาที่จ่าย</th>
+                <th> </th>
+                <th>ความเห็นเภสัช</th>
+            </tr>
+        <form>
+            <tr>
+                <td class ="medgroup"> 
+                    <label for="BETA-BLOCKER">BETA-BLOCKER:</label></td>
+                <td><select id="Medication" name="Betablocker">
+                    <option value="None">None</option>
+                    <option value="Bisoprolol">Bisoprolol</option>
+                    <option value="Carvedilol">Carvedilol</option>
+                    <option value="Metoprolol">Metoprolol</option>
+                    <option value="Nebivolol">Metoprolol</option>
+                  </select>
+                </td>
+                <td> 
+                    <input type="number" id = "Dosage" name="Dosage" value="">
+                </td>
+                <td> 
+                    <input type="number" id = "Number" name="Number" value="">
+                </td>
+                <td>x</td>
+                <td class = "time"> 
+                    <input type="number" id = "Time" name="Time" value="">
+                </td> 
+                <td class ="blank"></td>      
+                <td><select id="medchange" name="medchange">
+                    <option value="None">None</option>
+                    <option value="RM">RM</option>
+                    <option value="Change">change</option>
+                    <option value="Off">off</option>
+                    <option value="Increase">Increase</option>
+                    <option value="Decrease">Decrease</option>
+                  </select>
+                </td>
+                <td class ="blank"></td>  
+                <td><select id="Medication" name="Betablocker">
+                    <option value="None">None</option>
+                    <option value="Bisoprolol">Bisoprolol</option>
+                    <option value="Carvedilol">Carvedilol</option>
+                    <option value="Metoprolol">Metoprolol</option>
+                    <option value="Nebivolol">Metoprolol</option>
+                  </select>
+                </td>
+                <td> 
+                    <input type="number" id = "Dosage" name="Dosage" value="">
+                </td>
+                <td> 
+                    <input type="number" id = "Number" name="Number" value="">
+                </td>
+                <td>x</td>
+                <td class = "time"> 
+                    <input type="number" id = "Time" name="Time" value="">
+                </td>
+                <td class ="blank"></td>       
+                <td> 
+                    <input type="number" id = "druguse" name="druguse" value="">
+                </td>
+                <td> 
+                    <input type="number" id = "drugleftover" name="drugleftover" value="">
+                </td>
+                <td> 
+                    <input type="number" id = "drugtaken" name="drugtaken" value="">
+                </td>
+                <td class ="blank"></td> 
+                <td> 
+                    <input type="text" id = "note" name="note" value="">
+                </td>
+            </tr>
+        
+            
+            
+            <tr>
+            <td class ="medgroup">
+                <label for="ACEI/ARB/ARNI">ACEI/ARB/ARNI:</label>
+            </td>
+            <td>
+                <select id="Medication" name="ACEIARBARNI">
+                    <option value="None">None</option>
+                    <option value="Enalapril">Enarapril</option>
+                    <option value="Losartan">Losartan</option>
+                    <option value="Entresto">Entresto</option>
+                  </select>
+            </td>
+            <td> 
+                <input type="number" id = "Dosage" name="Dosage" value="">
+            </td>
+            <td> 
+                <input type="number" id = "Number" name="Number" value="">
+            </td>
+            <td>x</td>
+            <td class = "time"> 
+                <input type="number" id = "Time" name="Time" value="">
+            </td>
+            <td class ="blank"></td>     
+            <td><select id="medchange" name="medchange">
+                <option value="None">None</option>
+                <option value="RM">RM</option>
+                <option value="Change">change</option>
+                <option value="Off">off</option>
+                <option value="Increase">Increase</option>
+                <option value="Decrease">Decrease</option>
+              </select>
+            </td>
+            <td class ="blank"></td>  
+            <td>
+                <select id="Medication" name="ACEIARBARNI">
+                    <option value="None">None</option>
+                    <option value="Enalapril">Enarapril</option>
+                    <option value="Losartan">Losartan</option>
+                    <option value="Entresto">Entresto</option>
+                  </select>
+            </td>
+            <td> 
+                <input type="number" id = "Dosage" name="Dosage" value="">
+            </td>
+            <td> 
+                <input type="number" id = "Number" name="Number" value="">
+            </td>
+            <td>x</td>
+            <td class = "time"> 
+                <input type="number" id = "Time" name="Time" value="">
+            </td> 
+            <td class ="blank"></td>      
+            <td> 
+                <input type="number" id = "druguse" name="druguse" value="">
+            </td>
+            <td> 
+                <input type="number" id = "drugleftover" name="drugleftover" value="">
+            </td>
+            <td> 
+                <input type="number" id = "drugtaken" name="drugtaken" value="">
+            </td>
+            <td class ="blank"></td> 
+            <td> 
+                <input type="text" id = "note" name="note" value="">
+            </td>
+            </tr>    
+      
+            
+            
+            <tr>
+                <td class ="medgroup"> 
+                    <label for="MRA">MRA:</label> </td>
+                <td><select id="Medication" name="MRA">
+                    <option value="None">None</option>
+                    <option value="Spironolactone">Spironolactone</option>
+                </select>
+                </td>
+                <td> 
+                    <input type="number" id = "Dosage" name="Dosage" value="">
+                </td>
+                <td> 
+                    <input type="number" id = "Number" name="Number" value="">
+                </td>
+                <td>x</td>
+                <td class = "time"> 
+                    <input type="number" id = "Time" name="Time" value="">
+                </td>
+                <td class ="blank"></td>    
+                <td><select id="medchange" name="medchange">
+                    <option value="None">None</option>
+                    <option value="RM">RM</option>
+                    <option value="Change">change</option>
+                    <option value="Off">off</option>
+                    <option value="Increase">Increase</option>
+                    <option value="Decrease">Decrease</option>
+                  </select>
+                </td>
+                <td class ="blank"></td>  
+                <td><select id="Medication" name="MRA">
+                    <option value="None">None</option>
+                    <option value="Spironolactone">Spironolactone</option>
+                </select>
+                </td>
+                <td> 
+                    <input type="number" id = "Dosage" name="Dosage" value="">
+                </td>
+                <td> 
+                    <input type="number" id = "Number" name="Number" value="">
+                </td>
+                <td>x</td>
+                <td class = "time"> 
+                    <input type="number" id = "Time" name="Time" value="">
+                </td>
+                <td class ="blank"></td>       
+                <td> 
+                    <input type="number" id = "druguse" name="druguse" value="">
+                </td>
+                <td> 
+                    <input type="number" id = "drugleftover" name="drugleftover" value="">
+                </td>
+                <td> 
+                    <input type="number" id = "drugtaken" name="drugtaken" value="">
+                </td>
+                <td class ="blank"></td> 
+                <td> 
+                    <input type="text" id = "note" name="note" value="">
+                </td>
+            </tr>
+            
+            
+            <tr>
+                <td class ="medgroup" > 
+                    <label for="Diuretic">Diuretic:</label> </td>
+                <td><select id="Medication" name="Diuretic">
+                    <option value="None">None</option>
+                    <option value="Furosemide">Furosemide</option>
+                    </select>                    
+                </td>
+                <td> 
+                    <input type="number" id = "Dosage" name="Dosage" value="">
+                </td>
+                <td> 
+                    <input type="number" id = "Number" name="Number" value="">
+                </td>
+                <td>x</td>
+                <td class = "time"> 
+                    <input type="number" id = "Time" name="Time" value="">
+                </td>
+                <td class ="blank"></td>    
+                <td><select id="medchange" name="medchange">
+                    <option value="None">None</option>
+                    <option value="RM">RM</option>
+                    <option value="Change">change</option>
+                    <option value="Off">off</option>
+                    <option value="Increase">Increase</option>
+                    <option value="Decrease">Decrease</option>
+                  </select>
+                </td>
+                <td class ="blank"></td>  
+                <td><select id="Medication" name="Diuretic">
+                    <option value="None">None</option>
+                    <option value="Furosemide">Spironolactone</option>
+                    </select>                    
+                </td>
+                <td> 
+                    <input type="number" id = "Dosage" name="Dosage" value="">
+                </td>
+                <td> 
+                    <input type="number" id = "Number" name="Number" value="">
+                </td>
+                <td>x</td>
+                <td class = "time"> 
+                    <input type="number" id = "Time" name="Time" value="">
+                </td>
+                <td class ="blank"></td>       
+                <td> 
+                    <input type="number" id = "druguse" name="druguse" value="">
+                </td>
+                <td> 
+                    <input type="number" id = "drugleftover" name="drugleftover" value="">
+                </td>
+                <td> 
+                    <input type="number" id = "drugtaken" name="drugtaken" value="">
+                </td>
+                <td class ="blank"></td> 
+                <td> 
+                    <input type="text" id = "note" name="note" value="">
+                </td>
+                </tr>
+                
+                
+                
+                
+                <tr>
+                    <td class ="medgroup"> 
+                        <label for="SGLT2">SGLT2:</label> </td>
+                    <td><select id="Medication" name="SGLT2">
+                        <option value="None">None</option>
+                        <option value="Canagliflozin">Canagliflozin</option>
+                        <option value="Dapagliflozin">Dapagliflozin</option>
+                        <option value="Empagliflozin">Empagliflozin</option>
+                        <option value="Luseogliflozin">Luseogliflozin</option>
+                        </select>
+                    </td>
+                    <td> 
+                        <input type="number" id = "Dosage" name="Dosage" value="">
+                    </td>
+                    <td> 
+                        <input type="number" id = "Number" name="Number" value="">
+                    </td>
+                    <td>x</td>
+                    <td class = "time"> 
+                        <input type="number" id = "Time" name="Time" value="">
+                    </td>
+                    <td class ="blank"></td>    
+                    <td><select id="medchange" name="medchange">
+                        <option value="None">None</option>
+                        <option value="RM">RM</option>
+                        <option value="Change">change</option>
+                        <option value="Off">off</option>
+                        <option value="Increase">Increase</option>
+                        <option value="Decrease">Decrease</option>
+                      </select>
+                    </td>
+                    <td class ="blank"></td>  
+                    <td><select id="Medication" name="SGLT2">
+                        <option value="None">None</option>
+                        <option value="Canagliflozin">Canagliflozin</option>
+                        <option value="Dapagliflozin">Dapagliflozin</option>
+                        <option value="Empagliflozin">Empagliflozin</option>
+                        <option value="Luseogliflozin">Luseogliflozin</option>
+                        </select>
+                    </td>
+                    <td> 
+                        <input type="number" id = "Dosage" name="Dosage" value="">
+                    </td>
+                    <td> 
+                        <input type="number" id = "Number" name="Number" value="">
+                    </td>
+                    <td>x</td>
+                    <td class = "time"> 
+                        <input type="number" id = "Time" name="Time" value="">
+                    </td>
+                    <td class ="blank"></td>       
+                    <td> 
+                        <input type="number" id = "druguse" name="druguse" value="">
+                    </td>
+                    <td> 
+                        <input type="number" id = "drugleftover" name="drugleftover" value="">
+                    </td>
+                    <td> 
+                        <input type="number" id = "drugtaken" name="drugtaken" value="">
+                    </td>
+                    <td class ="blank"></td> 
+                    <td> 
+                        <input type="text" id = "note" name="note" value="">
+                    </td>
+                    </tr>
+                    
+                    
+
+                    <tr>
+                        <td class ="medgroup"> 
+                            <label for="Statin">STATIN:</label> </td>
+                        <td><select id="Medication" name="Statin">
+                            <option value="None">None</option>
+                            <option value="Simvastatin">Simvastatin</option>
+                            <option value="Atorvastatin">Atorvastatin</option>
+                            <option value="Rosuvastatin">Rosuvastatin</option>
+                            <option value="Pravastatin">Pravastatin</option>
+                            <option value="Fluvastatin">Fluvastatin</option>
+                            <option value="Pitavastatin">Pitavastatin</option>
+                            </select>
+                        </td>
+                        <td> 
+                            <input type="number" id = "Dosage" name="Dosage" value="">
+                        </td>
+                        <td> 
+                            <input type="number" id = "Number" name="Number" value="">
+                        </td>
+                        <td>x</td>
+                        <td class = "time"> 
+                            <input type="number" id = "Time" name="Time" value="">
+                        </td>
+                        <td class ="blank"></td>    
+                        <td><select id="medchange" name="medchange">
+                            <option value="None">None</option>
+                            <option value="RM">RM</option>
+                            <option value="Change">change</option>
+                            <option value="Off">off</option>
+                            <option value="Increase">Increase</option>
+                            <option value="Decrease">Decrease</option>
+                          </select>
+                        </td>
+                        <td class ="blank"></td>  
+                        <td><select id="Medication" name="Statin">
+                            <option value="None">None</option>
+                            <option value="Simvastatin">Simvastatin</option>
+                            <option value="Atorvastatin">Atorvastatin</option>
+                            <option value="Rosuvastatin">Rosuvastatin</option>
+                            <option value="Pravastatin">Pravastatin</option>
+                            <option value="Fluvastatin">Fluvastatin</option>
+                            <option value="Pitavastatin">Pitavastatin</option>
+                            </select>
+                        </td>
+                        <td> 
+                            <input type="number" id = "Dosage" name="Dosage" value="">
+                        </td>
+                        <td> 
+                            <input type="number" id = "Number" name="Number" value="">
+                        </td>
+                        <td>x</td>
+                        <td class = "time"> 
+                            <input type="number" id = "Time" name="Time" value="">
+                        </td>
+                        <td class ="blank"></td>       
+                        <td> 
+                            <input type="number" id = "druguse" name="druguse" value="">
+                        </td>
+                        <td> 
+                            <input type="number" id = "drugleftover" name="drugleftover" value="">
+                        </td>
+                        <td> 
+                            <input type="number" id = "drugtaken" name="drugtaken" value="">
+                        </td>
+                        <td class ="blank"></td> 
+                        <td> 
+                            <input type="text" id = "note" name="note" value="">
+                        </td>
+                        </tr>
+
+
+
+                    <tr>
+                        <td class ="medgroup"> 
+                            <label for="Other">OTHER:</label> </td>
+                        <td> 
+                                <input type="text" id = "otherdrug" name="otherdrug" value="">
+                        </td>
+                        <td> 
+                            <input type="number" id = "Dosage" name="Dosage" value="">
+                        </td>
+                        <td> 
+                            <input type="number" id = "Number" name="Number" value="">
+                        </td>
+                        <td>x</td>
+                        <td class = "time"> 
+                            <input type="number" id = "Time" name="Time" value="">
+                        </td>
+                        <td class ="blank"></td>    
+                        <td><select id="medchange" name="medchange">
+                            <option value="None">None</option>
+                            <option value="RM">RM</option>
+                            <option value="Change">change</option>
+                            <option value="Off">off</option>
+                            <option value="Increase">Increase</option>
+                            <option value="Decrease">Decrease</option>
+                            </select>
+                        </td>
+                        <td class ="blank"></td>  
+                        <td> 
+                            <input type="text" id = "otherdrug" name="otherdrug" value="">
+                        </td>
+                        <td> 
+                            <input type="number" id = "Dosage" name="Dosage" value="">
+                        </td>
+                        <td> 
+                            <input type="number" id = "Number" name="Number" value="">
+                        </td>
+                        <td>x</td>
+                        <td class = "time"> 
+                            <input type="number" id = "Time" name="Time" value="">
+                        </td>
+                            <td class ="blank"></td>       
+                        <td> 
+                            <input type="number" id = "druguse" name="druguse" value="">
+                        </td>
+                        <td> 
+                            <input type="number" id = "drugleftover" name="drugleftover" value="">
+                        </td>
+                        <td> 
+                            <input type="number" id = "drugtaken" name="drugtaken" value="">
+                        </td>
+                        <td class ="blank"></td> 
+                        <td> 
+                            <input type="text" id = "note" name="note" value="">
+                        </td>
+                    </tr>
+
+
+                    <tr>
+                        <td class ="medgroup"> 
+                            <label for="Other">OTHER:</label> </td>
+                        <td> 
+                                <input type="text" id = "otherdrug" name="otherdrug" value="">
+                        </td>
+                        <td> 
+                            <input type="number" id = "Dosage" name="Dosage" value="">
+                        </td>
+                        <td> 
+                            <input type="number" id = "Number" name="Number" value="">
+                        </td>
+                        <td>x</td>
+                        <td class = "time"> 
+                            <input type="number" id = "Time" name="Time" value="">
+                        </td>
+                        <td class ="blank"></td>    
+                        <td><select id="medchange" name="medchange">
+                            <option value="None">None</option>
+                            <option value="RM">RM</option>
+                            <option value="Change">change</option>
+                            <option value="Off">off</option>
+                            <option value="Increase">Increase</option>
+                            <option value="Decrease">Decrease</option>
+                            </select>
+                        </td>
+                        <td class ="blank"></td>  
+                        <td> 
+                            <input type="text" id = "otherdrug" name="otherdrug" value="">
+                        <td> 
+                            <input type="number" id = "Dosage" name="Dosage" value="">
+                        </td>
+                        <td> 
+                            <input type="number" id = "Number" name="Number" value="">
+                        </td>
+                        <td>x</td>
+                        <td class = "time"> 
+                            <input type="number" id = "Time" name="Time" value="">
+                        </td>
+                            <td class ="blank"></td>       
+                        <td> 
+                            <input type="number" id = "druguse" name="druguse" value="">
+                        </td>
+                        <td> 
+                            <input type="number" id = "drugleftover" name="drugleftover" value="">
+                        </td>
+                        <td> 
+                            <input type="number" id = "drugtaken" name="drugtaken" value="">
+                        </td>
+                        <td class ="blank"></td> 
+                        <td> 
+                            <input type="text" id = "note" name="note" value="">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class ="medgroup"> 
+                            <label for="Other">OTHER:</label> </td>
+                        <td> 
+                                <input type="text" id = "otherdrug" name="otherdrug" value="">
+                        </td>
+                        <td> 
+                            <input type="number" id = "Dosage" name="Dosage" value="">
+                        </td>
+                        <td> 
+                            <input type="number" id = "Number" name="Number" value="">
+                        </td>
+                        <td>x</td>
+                        <td class = "time"> 
+                            <input type="number" id = "Time" name="Time" value="">
+                        </td>
+                        <td class ="blank"></td>    
+                        <td><select id="medchange" name="medchange">
+                            <option value="None">None</option>
+                            <option value="RM">RM</option>
+                            <option value="Change">change</option>
+                            <option value="Off">off</option>
+                            <option value="Increase">Increase</option>
+                            <option value="Decrease">Decrease</option>
+                            </select>
+                        </td>
+                        <td class ="blank"></td>  
+                        <td> 
+                            <input type="text" id = "otherdrug" name="otherdrug" value="">
+                        <td> 
+                            <input type="number" id = "Dosage" name="Dosage" value="">
+                        </td>
+                        <td> 
+                            <input type="number" id = "Number" name="Number" value="">
+                        </td>
+                        <td>x</td>
+                        <td class = "time"> 
+                            <input type="number" id = "Time" name="Time" value="">
+                        </td>
+                            <td class ="blank"></td>       
+                        <td> 
+                            <input type="number" id = "druguse" name="druguse" value="">
+                        </td>
+                        <td> 
+                            <input type="number" id = "drugleftover" name="drugleftover" value="">
+                        </td>
+                        <td> 
+                            <input type="number" id = "drugtaken" name="drugtaken" value="">
+                        </td>
+                        <td class ="blank"></td> 
+                        <td> 
+                            <input type="text" id = "note" name="note" value="">
+                        </td>
+                    </tr>
+
+
+                    <tr>
+                        <td class ="medgroup"> 
+                            <label for="Other">OTHER:</label> </td>
+                        <td> 
+                                <input type="text" id = "otherdrug" name="otherdrug" value="">
+                        </td>
+                        <td> 
+                            <input type="number" id = "Dosage" name="Dosage" value="">
+                        </td>
+                        <td> 
+                            <input type="number" id = "Number" name="Number" value="">
+                        </td>
+                        <td>x</td>
+                        <td class = "time"> 
+                            <input type="number" id = "Time" name="Time" value="">
+                        </td>
+                        <td class ="blank"></td>    
+                        <td><select id="medchange" name="medchange">
+                            <option value="None">None</option>
+                            <option value="RM">RM</option>
+                            <option value="Change">change</option>
+                            <option value="Off">off</option>
+                            <option value="Increase">Increase</option>
+                            <option value="Decrease">Decrease</option>
+                            </select>
+                        </td>
+                        <td class ="blank"></td>  
+                        <td> 
+                            <input type="text" id = "otherdrug" name="otherdrug" value="">
+                        <td> 
+                            <input type="number" id = "Dosage" name="Dosage" value="">
+                        </td>
+                        <td> 
+                            <input type="number" id = "Number" name="Number" value="">
+                        </td>
+                        <td>x</td>
+                        <td class = "time"> 
+                            <input type="number" id = "Time" name="Time" value="">
+                        </td>
+                            <td class ="blank"></td>       
+                        <td> 
+                            <input type="number" id = "druguse" name="druguse" value="">
+                        </td>
+                        <td> 
+                            <input type="number" id = "drugleftover" name="drugleftover" value="">
+                        </td>
+                        <td> 
+                            <input type="number" id = "drugtaken" name="drugtaken" value="">
+                        </td>
+                        <td class ="blank"></td> 
+                        <td> 
+                            <input type="text" id = "note" name="note" value="">
+                        </td>
+                    </tr>
+
+
+                    <tr>
+                        <td class ="medgroup"> 
+                            <label for="Other">OTHER:</label> </td>
+                        <td> 
+                                <input type="text" id = "otherdrug" name="otherdrug" value="">
+                        </td>
+                        <td> 
+                            <input type="text" id = "Dosage" name="Dosage" value="">
+                        </td>
+                        <td> 
+                            <input type="text" id = "Number" name="Number" value="">
+                        </td>
+                        <td>x</td>
+                        <td class = "time"> 
+                            <input type="text" id = "Time" name="Time" value="">
+                        </td>
+                        <td class ="blank"></td>    
+                        <td><select id="medchange" name="medchange">
+                            <option value="None">None</option>
+                            <option value="RM">RM</option>
+                            <option value="Change">change</option>
+                            <option value="Off">off</option>
+                            <option value="Increase">Increase</option>
+                            <option value="Decrease">Decrease</option>
+                            </select>
+                        </td>
+                        <td class ="blank"></td>  
+                        <td> 
+                            <input type="text" id = "otherdrug" name="otherdrug" value="">
+                        <td> 
+                            <input type="number" id = "Dosage" name="Dosage" value="">
+                        </td>
+                        <td> 
+                            <input type="number" id = "Number" name="Number" value="">
+                        </td>
+                        <td>x</td>
+                        <td class = "time"> 
+                            <input type="number" id = "Time" name="Time" value="">
+                        </td>
+                            <td class ="blank"></td>       
+                        <td> 
+                            <input type="number" id = "druguse" name="druguse" value="">
+                        </td>
+                        <td> 
+                            <input type="number" id = "drugleftover" name="drugleftover" value="">
+                        </td>
+                        <td> 
+                            <input type="number" id = "drugtaken" name="drugtaken" value="">
+                        </td>
+                        <td class ="blank"></td> 
+                        <td> 
+                            <input type="text" id = "note" name="note" value="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class ="medgroup"> 
+                            <label for="Other">OTHER:</label> </td>
+                        <td> 
+                                <input type="text" id = "otherdrug" name="otherdrug" value="">
+                        </td>
+                        <td> 
+                            <input type="number" id = "Dosage" name="Dosage" value="">
+                        </td>
+                        <td> 
+                            <input type="number" id = "Number" name="Number" value="">
+                        </td>
+                        <td>x</td>
+                        <td class = "time"> 
+                            <input type="number" id = "Time" name="Time" value="">
+                        </td>
+                        <td class ="blank"></td>    
+                        <td><select id="medchange" name="medchange">
+                            <option value="None">None</option>
+                            <option value="RM">RM</option>
+                            <option value="Change">change</option>
+                            <option value="Off">off</option>
+                            <option value="Increase">Increase</option>
+                            <option value="Decrease">Decrease</option>
+                            </select>
+                        </td>
+                        <td class ="blank"></td>  
+                        <td> 
+                            <input type="text" id = "otherdrug" name="otherdrug" value="">
+                        <td> 
+                            <input type="number" id = "Dosage" name="Dosage" value="">
+                        </td>
+                        <td> 
+                            <input type="number" id = "Number" name="Number" value="">
+                        </td>
+                        <td>x</td>
+                        <td class = "time"> 
+                            <input type="number" id = "Time" name="Time" value="">
+                        </td>
+                            <td class ="blank"></td>       
+                        <td> 
+                            <input type="number" id = "druguse" name="druguse" value="">
+                        </td>
+                        <td> 
+                            <input type="number" id = "drugleftover" name="drugleftover" value="">
+                        </td>
+                        <td> 
+                            <input type="number" id = "drugtaken" name="drugtaken" value="">
+                        </td>
+                        <td class ="blank"></td> 
+                        <td> 
+                            <input type="text" id = "note" name="note" value="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class ="medgroup"> 
+                            <label for="Other">OTHER:</label> </td>
+                        <td> 
+                                <input type="text" id = "otherdrug" name="otherdrug" value="">
+                        </td>
+                        <td> 
+                            <input type="number" id = "Dosage" name="Dosage" value="">
+                        </td>
+                        <td> 
+                            <input type="number" id = "Number" name="Number" value="">
+                        </td>
+                        <td>x</td>
+                        <td class = "time"> 
+                            <input type="number" id = "Time" name="Time" value="">
+                        </td>
+                        <td class ="blank"></td>    
+                        <td><select id="medchange" name="medchange">
+                            <option value="None">None</option>
+                            <option value="RM">RM</option>
+                            <option value="Change">change</option>
+                            <option value="Off">off</option>
+                            <option value="Increase">Increase</option>
+                            <option value="Decrease">Decrease</option>
+                            </select>
+                        </td>
+                        <td class ="blank"></td>  
+                        <td> 
+                            <input type="text" id = "otherdrug" name="otherdrug" value="">
+                        <td> 
+                            <input type="number" id = "Dosage" name="Dosage" value="">
+                        </td>
+                        <td> 
+                            <input type="number" id = "Number" name="Number" value="">
+                        </td>
+                        <td>x</td>
+                        <td class = "time"> 
+                            <input type="number" id = "Time" name="Time" value="">
+                        </td>
+                            <td class ="blank"></td>       
+                        <td> 
+                            <input type="number" id = "druguse" name="druguse" value="">
+                        </td>
+                        <td> 
+                            <input type="number" id = "drugleftover" name="drugleftover" value="">
+                        </td>
+                        <td> 
+                            <input type="number" id = "drugtaken" name="drugtaken" value="">
+                        </td>
+                        <td class ="blank"></td> 
+                        <td> 
+                            <input type="text" id = "note" name="note" value="">
+                        </td>
+                    </tr>
+
+
+                    <tr>
+                        <td class ="medgroup"> 
+                            <label for="Other">OTHER:</label> </td>
+                        <td> 
+                                <input type="text" id = "otherdrug" name="otherdrug" value="">
+                        </td>
+                        <td> 
+                            <input type="number" id = "Dosage" name="Dosage" value="">
+                        </td>
+                        <td> 
+                            <input type="number" id = "Number" name="Number" value="">
+                        </td>
+                        <td>x</td>
+                        <td class = "time"> 
+                            <input type="number" id = "Time" name="Time" value="">
+                        </td>
+                        <td class ="blank"></td>    
+                        <td><select id="medchange" name="medchange">
+                            <option value="None">None</option>
+                            <option value="RM">RM</option>
+                            <option value="Change">change</option>
+                            <option value="Off">off</option>
+                            <option value="Increase">Increase</option>
+                            <option value="Decrease">Decrease</option>
+                            </select>
+                        </td>
+                        <td class ="blank"></td>  
+                        <td> 
+                            <input type="text" id = "otherdrug" name="otherdrug" value="">
+                        <td> 
+                            <input type="number" id = "Dosage" name="Dosage" value="">
+                        </td>
+                        <td> 
+                            <input type="number" id = "Number" name="Number" value="">
+                        </td>
+                        <td>x</td>
+                        <td class = "time"> 
+                            <input type="number" id = "Time" name="Time" value="">
+                        </td>
+                            <td class ="blank"></td>       
+                        <td> 
+                            <input type="number" id = "druguse" name="druguse" value="">
+                        </td>
+                        <td> 
+                            <input type="number" id = "drugleftover" name="drugleftover" value="">
+                        </td>
+                        <td> 
+                            <input type="number" id = "drugtaken" name="drugtaken" value="">
+                        </td>
+                        <td class ="blank"></td> 
+                        <td> 
+                            <input type="text" id = "note" name="note" value="">
+                        </td>
+                    </tr>
+
+
+                    <tr>
+                        <td class ="medgroup"> 
+                            <label for="Other">OTHER:</label> </td>
+                        <td> 
+                                <input type="text" id = "otherdrug" name="otherdrug" value="">
+                        </td>
+                        <td> 
+                            <input type="number" id = "Dosage" name="Dosage" value="">
+                        </td>
+                        <td> 
+                            <input type="number" id = "Number" name="Number" value="">
+                        </td>
+                        <td>x</td>
+                        <td class = "time"> 
+                            <input type="number" id = "Time" name="Time" value="">
+                        </td>
+                        <td class ="blank"></td>    
+                        <td><select id="medchange" name="medchange">
+                            <option value="None">None</option>
+                            <option value="RM">RM</option>
+                            <option value="Change">change</option>
+                            <option value="Off">off</option>
+                            <option value="Increase">Increase</option>
+                            <option value="Decrease">Decrease</option>
+                            </select>
+                        </td>
+                        <td class ="blank"></td>  
+                        <td> 
+                            <input type="text" id = "otherdrug" name="otherdrug" value="">
+                        <td> 
+                            <input type="number" id = "Dosage" name="Dosage" value="">
+                        </td>
+                        <td> 
+                            <input type="number" id = "Number" name="Number" value="">
+                        </td>
+                        <td>x</td>
+                        <td class = "time"> 
+                            <input type="number" id = "Time" name="Time" value="">
+                        </td>
+                            <td class ="blank"></td>       
+                        <td> 
+                            <input type="number" id = "druguse" name="druguse" value="">
+                        </td>
+                        <td> 
+                            <input type="number" id = "drugleftover" name="drugleftover" value="">
+                        </td>
+                        <td> 
+                            <input type="number" id = "drugtaken" name="drugtaken" value="">
+                        </td>
+                        <td class ="blank"></td> 
+                        <td> 
+                            <input type="text" id = "note" name="note" value="">
+                        </td>
+                    </tr>
+
+
+
+                       
+                           
+                        
+                    
+                                        
+                    
+                    <tr>
+                    <td class ="submit"><input type="submit"></td>
+                    </tr>         
+            </form>
+        </table>
+    </ol> 
+    </div>
+    
+</body>
+</html>
