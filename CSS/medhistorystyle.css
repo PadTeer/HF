@@ -1,0 +1,37 @@
+
+
+
+
+
+/**********************class******************************/
+.medhistory {
+    background-color:#C2FFD9 ;
+}
+
+.medhistory2 {
+    width: 300px;
+}
+
+.blank1 { 
+    width: 10px;
+}
+.blank2 { 
+    width: 100px;
+}
+
+.submit {
+    height: 80px;
+}
+/***********************ID*******************************/
+
+#pharmacistnote {
+    width: 500px;
+    height: 220px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: none;
+  }
